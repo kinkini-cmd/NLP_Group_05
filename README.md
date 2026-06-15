@@ -50,5 +50,5 @@ The project uses multiple publicly available datasets:
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/kinkini-cmd/NLP_Group_05>
 cd ml_fake_news
