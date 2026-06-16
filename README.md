@@ -1,6 +1,6 @@
 #Fake News Detection System using NLP
 
-##📌 Project Title
+📌 Project Title
 
 Fake News Detection System using Natural Language Processing (NLP), Machine Learning, and Deep Learning
 
