@@ -14,7 +14,7 @@ Fake News Detection System using Natural Language Processing (NLP), Machine Lear
 | Member 02 | CIT-24-01-0529 | ML Model Development, Data Preprocessing |
 | Member 03 | CIT-24-01-0279 | DL Model Development, System Integration |
 
-*(Replace with your actual names and student IDs.)*
+
 
 ---
 
