@@ -1,0 +1,28 @@
+# Data handling
+pandas
+numpy
+
+# NLP preprocessing
+nltk
+
+# Machine Learning - TF-IDF and Logistic Regression
+scikit-learn
+joblib
+
+# Deep Learning - LSTM
+tensorflow
+
+# EDA and visualizations
+matplotlib
+seaborn
+wordcloud
+
+# Jupyter notebooks
+jupyter
+ipykernel
+
+# Web application
+streamlit
+
+# Utilities
+tqdm

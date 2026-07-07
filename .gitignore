@@ -1,0 +1,13 @@
+# Virtual environment
+.venv/
+
+# Raw datasets
+data/fake.csv
+data/real.csv
+
+# Generated processed data
+data/processed/
+
+# Python cache
+__pycache__/
+*.pyc
