@@ -1,5 +1,0 @@
-venv/
-data/raw/
-*.pkl
-__pycache__/
-*.csv
