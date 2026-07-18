@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1_score,roc_auc,max_features,ngram_range,C
+Logistic Regression,0.9859335038363172,0.9831500117013807,0.99103562160887,0.9870770676691729,0.9989352338516451,5000,"1,2",1.0
