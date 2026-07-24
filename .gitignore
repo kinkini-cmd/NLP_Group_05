@@ -1,8 +1,24 @@
+# Virtual environments
 venv/
 venv312/
+
+# Python
 __pycache__/
 *.pyc
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Datasets
+datasets/
+data/
+
+# Trained models
+models/
+notebooks/models/
 *.pkl
-*.joblib
-.DS_Store
+*.bin
+*.safetensors
+
+# Results
+results/
