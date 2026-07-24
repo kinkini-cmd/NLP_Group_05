@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 
+
 # Load datasets
 true_df = pd.read_csv("data/True.csv")
 fake_df = pd.read_csv("data/Fake.csv")
