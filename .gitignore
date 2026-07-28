@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+venv312/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets
+datasets/
+data/
+
+# Trained models
+models/
+notebooks/models/
+dl_fake_detector/xlm_roberta/saved_model/
+*.pkl
+*.bin
+*.safetensors
+
+# Results
+results/

@@ -1,0 +1,49 @@
+import re
+
+
+FAKE_WORDS = [
+    "shocking",
+    "secret",
+    "exposed",
+    "you won't believe",
+    "miracle",
+    "breaking",
+    "viral",
+    "must see",
+    "truth revealed",
+]
+
+REAL_WORDS = [
+    "according to",
+    "official statement",
+    "reported by",
+    "data shows",
+    "court",
+    "ministry",
+    "police said",
+    "researchers",
+]
+
+
+def heuristic_score(text):
+    text_lower = text.lower()
+    score = 0
+
+    for word in FAKE_WORDS:
+        if word in text_lower:
+            score -= 1
+
+    for word in REAL_WORDS:
+        if word in text_lower:
+            score += 1
+
+    if text.count("!") >= 3:
+        score -= 1
+
+    if len(re.findall(r"[A-Z]{4,}", text)) >= 3:
+        score -= 1
+
+    if len(text.split()) < 40:
+        score -= 0.5
+
+    return score
