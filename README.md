@@ -1,18 +1,11 @@
-#Fake News Detection System using NLP
+# Fake News Detection System using NLP
 
 📌 Project Title
 
-Fake News Detection System using Natural Language Processing (NLP), Machine Learning, and Deep Learning
+Fake News Detection System using Natural Language Processing (NLP), 
+Machine Learning, and Deep Learning
 
----
-
-## Group Members
-
-| Member | Student ID | Responsibilities |
-|----------|------------|------------------|
-| Member 01 | CIT-24-01-0541| Dataset Identification ,Report Writing|
-| Member 02 | CIT-24-01-0529 |Model Evaluation,Report Writing|
-| Member 03 | CIT-24-01-0279 |Application Development|
+Member 03 - CIT-24-01-0279 
 
 ---
 <img width="1046" height="378" alt="image" src="https://github.com/user-attachments/assets/d46c0055-5de0-4b30-b8a8-e33d6e3c3d01" />
@@ -50,4 +43,5 @@ The project uses multiple publicly available datasets:
 
 ```bash
 git clone <https://github.com/kinkini-cmd/NLP_Group_05>
-cd ml_fake_news
+cd NLP_Group_05
+git checkout feature/cit-24-01-0279-LSTM
