@@ -16,7 +16,7 @@ data/
 # Trained models
 models/
 notebooks/models/
-dl_fake_detector/xlm_roberta/saved_model/
+dl_model/xlm_roberta/saved_model/
 *.pkl
 *.bin
 *.safetensors

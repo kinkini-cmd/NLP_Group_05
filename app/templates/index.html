@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multilingual Fake News Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <main class="shell">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">Fake News Detector</p>
+                <h1>Predict News</h1>
+            </div>
+            <div class="model-pill" id="active-model">ML (SVM) active</div>
+        </header>
+
+        <section class="workspace" aria-label="Prediction workspace">
+            <section class="input-panel" aria-label="News input">
+                <div class="tabs" role="tablist" aria-label="Prediction mode">
+                    <button class="tab active" id="text-tab" type="button" data-mode="text" role="tab" aria-selected="true">
+                        Text
+                    </button>
+                    <button class="tab" id="url-tab" type="button" data-mode="url" role="tab" aria-selected="false">
+                        URL
+                    </button>
+                </div>
+
+                <div class="model-selector" role="radiogroup" aria-label="Model selection">
+                    <label class="model-option">
+                        <input type="radio" name="model_type" value="ml" checked>
+                        <span>ML (SVM)</span>
+                    </label>
+                    <label class="model-option">
+                        <input type="radio" name="model_type" value="dl">
+                        <span>DL (CNN)</span>
+                    </label>
+                    <label class="model-option">
+                        <input type="radio" name="model_type" value="both">
+                        <span>Both</span>
+                    </label>
+                </div>
+
+                <form id="predict-form" class="panel">
+                    <div class="field-row">
+                        <label id="input-label" for="news-input">Article text</label>
+                        <span id="input-count">0 words</span>
+                    </div>
+                    <textarea id="news-input" rows="12" placeholder="Paste article text..." required></textarea>
+                    <button class="primary" type="submit">Run Prediction</button>
+                </form>
+            </section>
+
+            <section class="output-panel" aria-label="Prediction result">
+                <section id="result" class="result empty" aria-live="polite">
+                    <div class="empty-state">
+                        <span class="empty-mark">ML</span>
+                        <h2>Waiting for input</h2>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
